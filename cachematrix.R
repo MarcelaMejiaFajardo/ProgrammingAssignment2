@@ -12,7 +12,7 @@ makeCacheMatrix <- function(x = matrix()) {
             x <<- y
             nr = nrow(x)
             nc = ncol(x)
-            inverx <- matrix(nrow = nr, ncol = nc)
+            inverx <<- matrix(nrow = nr, ncol = nc)
       }
       get <- function() x
       setinverx <- function(inversa) inverx <<- inversa
